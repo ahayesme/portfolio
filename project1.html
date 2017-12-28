@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio - Java Projects</title>
+	<link rel="stylesheet" href="./style/individual.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div id="name">
+			<a href="./index.html"><h1>Amani Hayes-Messinger</h1></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="./index.html">About Me</a></li>
+				<li><a href="./projects.html">Projects</a></li>
+				<li><a href="./contact.html">Contact Me</a></li>
+				<li><a href="./resume.html">Resume</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="title">
+			<h2>Java Projects</h2>
+			<p>Object Oriented Java projects coded in my intro course sequence.</p>
+		</div>
+		<hr>
+        
+        <div class="part">
+            <h3>Pacman</h3>
+            <p>Modeled after the original Pacman game, I have coded a version of the video arcade game using Java.</p>
+            <img src="./images/pacman.jpg" alt="image not available">
+            <h6>Figure 1: Pacman game, just begun.</h6>
+            <p>Pacman is played on a 23 x 23 grid organized into a maze. The player controls Pacman’s direction of movement with the keyboard (the right, left, up and down arrows navigate Pacman in the corresponding direction through the maze). The goal is to eat all of the white dots populating the maze while avoiding the four ghosts (Blinky, Pinky, Inky, and Clyde) who chase after Pacman.</p>
+            <p>The user begins with three lives and loses one each time Pacman is caught by a ghost. When Pacman no longer has remaining lives, the game ends and the player has lost. The player’s score is calculated throughout the game (10 points are earned for each white dot eaten, 100 points for the energizers, and 200 points for each ghost eaten during the period after an energizer has been eaten and the ghosts are consumable). If Pacman eats all the white dots in the maze before losing all 3 lives, the player has won! The game can be paused at any point in play by using the “P” key and game be restarted from the beginning by hitting the restart button.</p>
+            <img src="./images/pacman2.jpg" alt="image not available">
+            <h6>Figure 2: Pacman game, Score: 2950, Lives: 1, Game State: Paused.</h6>
+            <p>Screenshots from my Pacman game are included. Code is available upon request*.</p>
+        </div>
+		<div class="part">
+			<h3>Tetris</h3>
+			<p>Originally programmed, designed, and released in the 80s, Tetris is a puzzle video game that challenges the user to match tiles. The following project is a recreation of this popular game, which I coded in Java during a course which introduced object-oriented design in Java.</p>
+            <p>My game is modeled much like a standard Tetris game: When the user launches the game, an empty game board appears and one of seven randomly selected Tetris puzzle pieces begins to fall down the board. When a piece can no longer move (i.e. it has reached the bottom of the screen or there is a Tetris piece already occupying the space below it), the currently falling piece reaches its final resting location and a new piece begins to fall.</p>
+            <div class="slideshow">
+                <div class="w3-content w3-display-container" style="max-width:800px">
+                  <img class="mySlides" src="./images/tetris1.jpg" style="width:100%">
+                  <img class="mySlides" src="./images/tetris3.jpg" style="width:100%">
+                  <img class="mySlides" src="./images/tetris2.jpg" style="width:100%">
+                  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                  </div>
+                </div>
+            </div>
+			<h6>Figure 3: Tetris states. Code Availible upon request*.</h6>
+            <p>The player can control the location of the currently falling piece at any time by using the right and left keys for horizontal movement, the down arrow to move the piece one square downward, the space bar to drop the piece to the lowest possible resting point, or the up arrow to rotate the current piece counterclockwise. A player may also pause the game at any point using the “P” key.</p>
+            <p>The objective of the game is to fill complete rows of the game board with Tetris tiles. When a row is completed, it will disappear and all rows above it will be shifted downwards. Game play ends if Tetris pieces get stacked to the top of the board and there is no longer room for new pieces to be generated.</p>
+		</div>
+        <div class="part">
+            <h3>Code Confidentiality</h3>
+            <p id="private">*Due to the confidentiality policy for the course this was coded for, I am restricted from posting the code on any online sources. For job/internship purposes I am happy to provide any code upon request.</p>
+        </div>
+	</div>
+	<div class="bottom">
+		<h5>Amani Hayes-Messinger - Brown University, Computer Science and American Studies Double Concentrator</h5>
+	</div>	
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " w3-white";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio - Responsive Redesign</title>
+	<link rel="stylesheet" href="./style/individual.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div id="name">
+			<a href="./index.html"><h1>Amani Hayes-Messinger</h1></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="./index.html">About Me</a></li>
+				<li><a href="./projects.html">Projects</a></li>
+				<li><a href="./contact.html">Contact Me</a></li>
+				<li><a href="./resume.html">Resume</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="title">
+			<h2>Responsive Redesign</h2>
+			<p>This project focused on finding an interface that lacked in its intended delivery, and was not responsive across platforms, and modifying the website using mockups, high fidelity designs, and a final website. Throughout the process a focus was kept on design principles acquired in a Brown University UI/UX course.</p>
+		</div>
+		<hr>
+        
+       <div class="redesign">
+	 	<object data="redesign.pdf" type="application/pdf">
+           <p>This browser does not support PDFs. Please download the PDF to view it: <a class="rlink" href="https://drive.google.com/file/d/1dxsl604l-4uEGwlpx2jcQC6EskX2vOO0/view?usp=sharing">Download PDF</a>. Or go to this link to view the resume: https://drive.google.com/file/d/1dxsl604l-4uEGwlpx2jcQC6EskX2vOO0/view?usp=sharing</p>
+        </object>
+	   </div>
+        
+        <div class="part">
+            <h3>Choosing a Website</h3>
+            <p>I was tasked with finding a website that demanded improvement, based on its desired use and usability across platforms. I setteld on comcast.net mail center. As noted in the chart above, I zeroed in on how difficult it was to locate the mailcenter on the current Comcast homepage, and set forth with the task to prioritize email and use across computer, iPad and iPhone.</p>
+            <img src="./images/original-comcast.jpg" alt="image not available">
+            <h6>Figure 1: Original Comcast Homepage screen from which I drew my critiques.</h6>
+        </div>
+		<div class="part">
+			<h3>Wireframing</h3>
+			<p>Keeping in mind the intended use of the Comcast Mail Center, I applied important design principles including ease of learning, memorability, intuitive design, and efficiency of use to begin to produce wire frames for what would later become  responsive site. I chose the 5 screens I found most important in the Comcast Mail experience, and redesigned them as low level mock ups. The mockups, shown below, then become the basis for the web version of my responsive site.</p>
+            <div class="slideshow">
+                <div class="w3-content w3-display-container" style="max-width:800px">
+                  <img class="mySlides" src="./images/mockup1.png" style="width:100%">
+                  <img class="mySlides" src="./images/mockup2.png" style="width:100%">
+                  <img class="mySlides" src="./images/mockup3.png" style="width:100%">
+                  <img class="mySlides" src="./images/mockup4.png" style="width:100%">
+                  <img class="mySlides" src="./images/mockup5.png" style="width:100%">
+                  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                  </div>
+                </div>
+            </div>
+			<h6>Figure 2: Comcast Mail Center Mockups.</h6>
+		</div>
+		<div class="part">
+			<h3>High Fidelity</h3>
+			<p>Using Proto.io, I created a high-fidelity mockup that displays the proposed responsiveness for computer, iPad and iPhone platforms.</p>
+			<img src="./images/web.jpg" alt="image not available">
+			<h6>Figure 3: High fidelity mockup for web. </h6>
+			<img src="./images/iPad.jpg" alt="image not available">
+			<h6>Figure 4: High fidelity mockup for iPad. </h6>
+            <p>In each of the mockups I ensured the centralization of the Mail Center, prioritizing the placement of the login features over other items</p>
+            <img src="./images/iPhone.jpg" alt="image not available">
+			<h6>Figure 5: High fidelity mockup for iPhone, opening view. </h6>
+            <img src="./images/iPhone2.jpg" alt="image not available">
+			<h6>Figure 6: High fidelity mockup for iPhone, scroll down. </h6>
+			
+            <h4>Responsive Site and Justifications</h4>
+            <p>Overall, my responsive redesign focuses on prioritizing the mail center login at all times. As I am redesigning the screen for mail, I argue that the user’s focus should be drawn primarily to the mail center. As such, it is placed at the left in both Computer and iPad models, and takes presedence over the news slideshow in the iPhone version. I used vw (viewport width) so that my grid sizing was relative instead of static. When moving to an iPhone sized screen, it no longer seemed usable to have multiple columns, so I shifted my design to have a single column and had to make desicions about which features needed to come first in row order. As the page is primarily for mail, as stated before, the site name and the personalized welcome were the only items to take presedence over the mail center (which is still visible without scrolling). One must then scroll to see the news slideshow, and the bottom nav bar. The iPad view is a close replica of the Computer model, because it offers enough room for a user to have a large enough mail center and view the news slideshow at once. Since the top navigation bar would not fit on a single line, it gets deprioritized and granted two lines that come below the site and user introduction. All design decisions were made to prioritize mail on this comcast email interface.</p>
+            <a href="responsive.html">
+            <img src="./images/responsive2.jpg" alt="image not available">
+			<h6>Figure 7: Screen capture of the final responsive site, click through for site. </h6>
+            </a>
+		</div>
+	</div>
+	<div class="bottom">
+		<h5>Amani Hayes-Messinger - Brown University, Computer Science and American Studies Double Concentrator</h5>
+	</div>	
+    
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " w3-white";
+        }
+    </script>
+
+</body>
+</html>

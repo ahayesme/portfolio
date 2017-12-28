@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio - Iterative Redesign</title>
+	<link rel="stylesheet" href="./style/individual.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div id="name">
+			<a href="./index.html"><h1>Amani Hayes-Messinger</h1></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="./index.html">About Me</a></li>
+				<li><a href="./projects.html">Projects</a></li>
+				<li><a href="./contact.html">Contact Me</a></li>
+				<li><a href="./resume.html">Resume</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="title">
+			<h2>Iterative Redesign</h2>
+			<p>This project was developed with the intent to solve a problem that a current startup is working on, using the principles we learned throughout a UI/UX course. Through conducting user testing and multiple rounds of prototyping, the final design is built to service a true user experience of a Peergrade iPad platform.</p>
+		</div>
+		<hr>
+        
+       <iframe id="video" src="https://drive.google.com/file/d/1ndlO8karJlcC1JFWgU1IlGj9rd6XrQRY/preview" width="640" height="480"></iframe>
+        
+        <div class="part">
+            <h3>Peergrade</h3>
+            <p>TechCrunch Description: Peergrade wants to help teachers save time and teach more effectively by letting students grade each other’s work. When students give feedback anonymously and grade their colleague’s work, they also learn. Meanwhile, teachers have a lot less work and can drastically reduce costs — universities can save on average $13,000 a year by replacing teaching assistants with Peergrade. Already the company has $150,000 in ARR, but it has a huge market opportunity ahead of it, with more than 100,000 university departments it could go after.</p>
+            <p>For the purposes of this iterative evaluation and redesign project, my team chose to focus on the student view of the Peergrade application, and consider its marketability beyond college classrooms. By designing an iPad interface, we aimed to make the application useful in high school classrooms that are increasingly encorporating the use of iPads.</p>
+        </div>
+		<div class="part">
+			<h3>Sketching</h3>
+			<p>The first step of the project was to sketch multiple versions of the 'ideal' iPad interface. This consisted of 4 sets of different sketches of the 5 screen views we identified to be most important. While developing each set of sketches, we implemented important design principles including (but not limited to) things like readability, memorability, and user-friendliness. Focusing on the design of the student side of the application, our paper prototypes include all major screens of the student interface: Home Page (shows all enrolled courses), Course Home Page, Submit Assignment page, Give Feedback page, Review Feedback page.</p>
+            <div class="slideshow">
+                <div class="w3-content w3-display-container" style="max-width:800px">
+                  <img class="mySlides" src="./images/sketch1.jpg" style="width:100%">
+                  <img class="mySlides" src="./images/sketch2.jpg" style="width:100%">
+                  <img class="mySlides" src="./images/sketch3.jpg" style="width:100%">
+                  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                  </div>
+                </div>
+            </div>
+			<h6>Figure 1: Final sketch series after three earlier iterations.</h6>
+		</div>
+		<div class="part">
+			<h3>High Fidelity Prototype</h3>
+			<p>Using Figma, we created an interactive version of the 5 main user interfaces that we sketched above.</p>
+            <div id="proto">
+                <a id="proto1" href="https://www.figma.com/proto/MqSHHoFuReIBqGp9ol6s0AbJ/Iterative-Design?scaling=contain&node-id=26%3A47">Click here to experience the interactive prototype.</a>
+            </div>
+			<img src="./images/hifi.jpg" alt="image not available">
+			<h6>Figure 2: Example high fidelity mockups of the student Homepage and Submit Asignment Page. This is modeled after the sketch above for the first iteration of high fidelity designs. </h6>
+			<img src="./images/hifi2.jpg" alt="image not available">
+			<h6>Figure 3: Displays the interactive portion of the prototype, indicating how each page, button, etc are connected to one another. </h6>
+			
+            <h4>Design Explanations</h4>
+            <p>Based on our original sketches, my team wanted to create an user-flow that focused on usability and learnability, especially considering our audience age would vary across student grade level.</p>
+            <p>Because of its use in the classroom, we decided to design the application for iPad. We made this decision based on Peergrade’s mission to be used in classroom by all children, including those that may not have access to a computer at home. Many school districts across the country have rolled out iPad use in the classroom for these reasons, and we see Peergrade integrating fully into a school’s curriculum with frequent use, as much as a textbook on an iPad would be. </p>
+            <p>We chose a light blue (#52CCF9) color as the primary color for the prototype to match Peergrade’s current visual design language. We chose the font Roboto to start our hi-fi prototype because of its established design use amongst younger audiences (especially for web-based applications), along with its readability, loose letter spacing and a larger x-height than traditional fonts. We use color to distinguish between assignments that require action of some sort, such as submitting or reviewing feedback, and assignments that do not require action either because they have not been released or because they are still awaiting peer feedback.</p>
+            <p>Based on our sketches, we made design decisions to have an expandable sidebar menu, which would allow us to make better use of the iPad space available and only show relevant information at any given time. We also felt the best choice for the home screen was a “To-Do” list so students could immediately see and navigate to the most pressing action items in the fewest clicks. Our main change from the final sketch was the addition of more prominent deadlines associated with each assignment, as well as the addition of more states, such as submitted vs. unsubmitted assignments. For each course home page, we decided to include quick links/buttons for email, syllabus, and a chat forum for questions, along with an individual to-do list and an overall assignment list for that class, again separate to give students quick access to their most urgent items. For the give/review feedback screens, we decided it was important to be able to view feedback guidelines and easily toggle between unedited versions and full-screen editing modes. We also agreed there should be a section for general “overall” comments. These choices were all made based on usability principles to present clear, distinguishable tasks to users. </p>
+            
+            <h4>In-Class Critique</h4>
+            <p>When the team presented our prototype for in-class critiques, we were given useful feedback to better distinguish between assignments that required action (submission, giving feedback) and those that did not require action (assignment not released, pending peer feedback). Before, the same color scheme was used to differentiate between submitting assignments and giving feedback and assignments with actions and assignments without actions; the class felt the color coded system could become confusing. We agreed with this and made a design choice to keep all assignment types the same color, but emphasize using text style what was “done” and what was still “to do”, in addition to keeping those tasks more separated on the home and course pages. </p>
+            <p>Another piece of feedback we received was to make due dates more distinguishable, since this would be one of the most useful pieces of information for students. We also agreed with this, and changed our design on the home page so that that assignments in the to do list were organized chronologically by due date instead of alphabetically by course name. This makes it easier for students to immediately see their most urgent items without having to parse through assignments for every class.</p>
+		</div>
+		<div class="part">
+			<h3>UserTesting</h3>
+            <h4>Task and Hypothesis</h4>
+			<p>For user testing, we asked participants to complete one main task with two subtasks. The user was asked to view the feedback on Essay #3 for ENGL 0930. In order to do so, the user needed to complete the subtask of navigating to the ENGL 0930 homepage from the main homepage and the subtask of navigating from the course homepage to the specific essay’s feedback page. We hypothesized that our users would be able to complete review of the feedback on Essay #3 for ENGL 0930 because of the improved distinction between assignments to review feedback for and assignments to submit, and the prominence of the “To Do” tasks on the ENGL 0930 course page. However, we also hypothesized that the subtask of navigating to the course homepage from the main homepage would be more challenging than finding the feedback page from the course homepage. We believed this because if a user has not encountered a three-bar menu before, they may not know how they are used. However, since they are very common in mobile applications and are easy to learn how to use, we decided to keep this design.</p>
+            <h4>Experiment</h4>
+                <p>Task: From the homepage, navigate to the ENGL 0930 course homepage.</p>
+                <p>Task: From the ENGL 0930 course homepage, navigate to the page that allows you to view feedback for the Essay #3 that you submitted.</p>
+                <p>Verbal Question: What actions and options did you assume would be available in the three-bar menu located in the upper left corner of every screen?</p>
+                <p>5-point Scale Question: On a scale from very difficult to very easy, how hard was it to differentiate between assignments that you needed to submit and assignments that you needed to give peer feedback for?</p>
+                <p>Post experiment: What frustrated you the most about this site? If you had a magic wand, what is the one thing about the site you would change? What did you like about this site? On a scale from 1-10, how likely are you to recommend this site to a friend?</p>
+            <h4>Results</h4>
+            <p>Users rated our product 8.7/10. They described it as “straightforward” and “easy to understand”. While all three users did complete the task, only one affirmed that they successfully completed it, while the other two were unsure that they had reached the essay’s feedback page. This was most likely due to unfamiliarity with prototypes, which we describe below. None of the users clicked on the three-bar menu initially to find the course home page, and when the asked, none of them had a guess as to what items the menu might contain. One user verbally reflected not knowing the three bar menu was there, which reflected unfamiliarity with this design object, and one that was not immediately intuitive. Based on this feedback, in our next iteration we would consider making the course list more accessible from the home page, maybe through a direct button on the home page. As hypothesized, users easily found the button that allowed them to view feedback on Essay #3 from the course homepage, indicating that we should maintain the current layout of this design component in the next iteration of our prototype.</p>
+            <p>While we got some constructive feedback from our test participants, the experience of using an anonymous user testing service proved to have some difficulties. Following the instruction on the PDF we were given, we did not set any requirements for the anonymous users. As a result of the nature of the service, our participants seemed to lack knowledge about how to use a prototype (and how a prototype differs from a finalized app or website). Without UserTesting screening for or providing adequate information about the purpose and function of a prototype, the accuracy of information we could collect was limited. Additionally, the video capture didn’t show our prototype, so we could not see what screen the user was on when they narrated. Finally, we faced the challenge that two of three of our testers were unfamiliar with the lorem ipsum placeholder text, and spent significant amounts of time distracted by their inability to read “another language”  and confused that they were not warned they would have to use a language other than English. While hearing users’ commentary gave us some actionable feedback, most of the written feedback was terse and non-specific, often responding “I don’t know” or “I like it”, making it challenging to derive changes from the verbal and written feedback. </p>
+            <p>Despite the challenges faced using UserTesting for anonymous feedback, we learned both about the strengths and weaknesses of the anonymous prototype testing process, and got implementable feedback for the next stage of our prototype. In that regard, our testing was at least partially successful, both in the praise we received from our testers about the ease of navigating through task completion, and in the pointed feedback we got for improvement. One user suggested using color coding to distinguish between assignments for different courses, which we would definitely consider implementing in our next iteration.</p>
+		</div>
+        <div class="part">
+            <h3>Final Design</h3>
+            <img src="./images/hifi3.jpg" alt="image not available">
+            <div id="proto">
+                <a id="proto1" href="https://www.figma.com/proto/VXuEd2uDEchzMzAW1Q77u3/Peergrade-FINAL-2.0-(Copy)?scaling=contain&node-id=148%3A530">Click here to experience the interactive prototype.</a>
+            </div>
+
+        </div>
+	</div>
+	<div class="bottom">
+		<h5>Amani Hayes-Messinger - Brown University, Computer Science and American Studies Double Concentrator</h5>
+	</div>	
+    
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " w3-white";
+        }
+    </script>
+
+</body>
+</html>
